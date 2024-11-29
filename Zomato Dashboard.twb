@@ -1,0 +1,2062 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Country Code' datatype='integer' name='[Country Code Parameter]' param-domain-type='any' role='measure' type='quantitative' value='1'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Price range ' datatype='integer' name='[Price range Parameter]' param-domain-type='range' role='measure' type='quantitative' value='1'>
+        <calculation class='tableau' formula='1' />
+        <range max='4' min='1' />
+      </column>
+    </datasource>
+    <datasource caption='Cleaned Zomato Dataset' inline='true' name='federated.0h7y0d809r0s1p1349chh0pzl8af' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Cleaned Zomato Dataset' name='textscan.0ytttbl13rvdgy1f7ctk90lhdw3u'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/Admin/Desktop/Data science/Week 11 - 20/Week 12/Datasets/Cleaned Zomato Dataset.csv' dataRefreshTime='' directory='C:/Users/Admin/Desktop/Data science/Week 11 - 20/Week 12/Datasets' filename='C:/Users/Admin/AppData/Local/Temp/TableauTemp/1hc57qy07whtle17sp6t80ep7zvp/Cleaned Zomato Dataset.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ytttbl13rvdgy1f7ctk90lhdw3u' name='Cleaned Zomato Dataset.csv' table='[Cleaned Zomato Dataset#csv$]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:T10001:no:A1:T10001:2' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Cuisines New Cuisines New' ordinal='0' />
+            <column datatype='integer' name='Restaurant ID Restaurant ID' ordinal='1' />
+            <column datatype='string' name='Restaurant Name Restaurant Name' ordinal='2' />
+            <column datatype='integer' name='Country Code Country Code' ordinal='3' />
+            <column datatype='string' name='City City' ordinal='4' />
+            <column datatype='string' name='Address Address' ordinal='5' />
+            <column datatype='string' name='Locality Locality' ordinal='6' />
+            <column datatype='string' name='Locality Verbose Locality Verbose' ordinal='7' />
+            <column datatype='real' name='Longitude Longitude' ordinal='8' />
+            <column datatype='real' name='Latitude Latitude' ordinal='9' />
+            <column datatype='string' name='Cuisines Cuisines' ordinal='10' />
+            <column datatype='string' name='Currency Currency' ordinal='11' />
+            <column datatype='string' name='Has Table booking Has Table booking' ordinal='12' />
+            <column datatype='string' name='Has Online delivery Has Online delivery' ordinal='13' />
+            <column datatype='string' name='Is delivering now Is delivering now' ordinal='14' />
+            <column datatype='string' name='Switch to order menu Switch to order menu' ordinal='15' />
+            <column datatype='integer' name='Price range Price range' ordinal='16' />
+            <column datatype='integer' name='Votes Votes' ordinal='17' />
+            <column datatype='integer' name='Average Cost for two Average Cost for two' ordinal='18' />
+            <column datatype='real' name='Rating Rating' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T10001:no:A1:T10001:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>79994</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cuisines New</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cuisines New]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Cuisines New</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Restaurant ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Restaurant ID]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Restaurant ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Restaurant Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Restaurant Name]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Restaurant Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Country Code]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Country Code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Address</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Address]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Address</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Locality</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Locality]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Locality</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Locality Verbose</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Locality Verbose]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Locality Verbose</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cuisines</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cuisines]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Cuisines</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Currency</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Currency]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Currency</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has Table booking</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Has Table booking]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Has Table booking</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has Online delivery</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Has Online delivery]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Has Online delivery</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is delivering now</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Is delivering now]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Is delivering now</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Switch to order menu</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Switch to order menu]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Switch to order menu</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price range</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price range]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Price range</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Votes]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Votes</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Cost for two</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average Cost for two]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Average Cost for two</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[Cleaned Zomato Dataset.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='No.of countries' datatype='integer' name='[Calculation_1343198602904535040]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Country Code])' />
+      </column>
+      <column caption='Average Rating' datatype='real' name='[Calculation_1343198602922442755]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Rating])' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' name='[Country Code]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[Price range]' role='measure' type='ordinal' />
+      <column datatype='integer' name='[Restaurant ID]' role='dimension' type='ordinal' />
+      <column caption='Cleaned Zomato Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]' role='measure' type='quantitative' />
+      <group caption='Action (City)' hidden='true' name='[Action (City)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[City]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/Admin/Documents/My Tableau Repository/Datasources/Cleaned Zomato Dataset.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/13/2024 05:04:45 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Cleaned Zomato Dataset' increment-value='%null%' refresh-type='create' rows-inserted='19719' timestamp-start='2024-11-13 17:04:42.635' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Cuisines New</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Cuisines New]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cuisines New</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>156</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Restaurant ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Restaurant ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Restaurant ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7058</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Restaurant Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Restaurant Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Restaurant Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5050</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Country Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country Code</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>164</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Address]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Address</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6514</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Locality</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Locality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Locality</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1162</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Locality Verbose</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Locality Verbose]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Locality Verbose</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1200</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5825</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6336</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cuisines</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Cuisines]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cuisines</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1688</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Currency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Currency</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Has Table booking</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Has Table booking]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Has Table booking</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Has Online delivery</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Has Online delivery]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Has Online delivery</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Is delivering now</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Is delivering now]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Is delivering now</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Switch to order menu</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Switch to order menu]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Switch to order menu</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price range</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price range]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price range</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Votes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Votes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Votes</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1042</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average Cost for two</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Average Cost for two]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average Cost for two</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>124</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rating</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Cleaned Zomato Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Cuisines New' />
+        <field-sort-custom-order field='Restaurant ID' />
+        <field-sort-custom-order field='Calculation_1343198602922442755' />
+        <field-sort-custom-order field='Restaurant Name' />
+        <field-sort-custom-order field='Country Code' />
+        <field-sort-custom-order field='City' />
+        <field-sort-custom-order field='Address' />
+        <field-sort-custom-order field='Locality' />
+        <field-sort-custom-order field='Locality Verbose' />
+        <field-sort-custom-order field='Longitude' />
+        <field-sort-custom-order field='Latitude' />
+        <field-sort-custom-order field='Cuisines' />
+        <field-sort-custom-order field='Currency' />
+        <field-sort-custom-order field='Has Table booking' />
+        <field-sort-custom-order field='Has Online delivery' />
+        <field-sort-custom-order field='Is delivering now' />
+        <field-sort-custom-order field='Switch to order menu' />
+        <field-sort-custom-order field='Calculation_1343198602904535040' />
+        <field-sort-custom-order field='Price range' />
+        <field-sort-custom-order field='Votes' />
+        <field-sort-custom-order field='Average Cost for two' />
+        <field-sort-custom-order field='Rating' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Cleaned Zomato Dataset.csv' id='Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8'>
+            <properties context=''>
+              <relation connection='textscan.0ytttbl13rvdgy1f7ctk90lhdw3u' name='Cleaned Zomato Dataset.csv' table='[Cleaned Zomato Dataset#csv$]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:T10001:no:A1:T10001:2' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Cuisines New Cuisines New' ordinal='0' />
+                  <column datatype='integer' name='Restaurant ID Restaurant ID' ordinal='1' />
+                  <column datatype='string' name='Restaurant Name Restaurant Name' ordinal='2' />
+                  <column datatype='integer' name='Country Code Country Code' ordinal='3' />
+                  <column datatype='string' name='City City' ordinal='4' />
+                  <column datatype='string' name='Address Address' ordinal='5' />
+                  <column datatype='string' name='Locality Locality' ordinal='6' />
+                  <column datatype='string' name='Locality Verbose Locality Verbose' ordinal='7' />
+                  <column datatype='real' name='Longitude Longitude' ordinal='8' />
+                  <column datatype='real' name='Latitude Latitude' ordinal='9' />
+                  <column datatype='string' name='Cuisines Cuisines' ordinal='10' />
+                  <column datatype='string' name='Currency Currency' ordinal='11' />
+                  <column datatype='string' name='Has Table booking Has Table booking' ordinal='12' />
+                  <column datatype='string' name='Has Online delivery Has Online delivery' ordinal='13' />
+                  <column datatype='string' name='Is delivering now Is delivering now' ordinal='14' />
+                  <column datatype='string' name='Switch to order menu Switch to order menu' ordinal='15' />
+                  <column datatype='integer' name='Price range Price range' ordinal='16' />
+                  <column datatype='integer' name='Votes Votes' ordinal='17' />
+                  <column datatype='integer' name='Average Cost for two Average Cost for two' ordinal='18' />
+                  <column datatype='real' name='Rating Rating' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0h7y0d809r0s1p1349chh0pzl8af'>
+      <datasources>
+        <datasource caption='Cleaned Zomato Dataset' name='federated.0h7y0d809r0s1p1349chh0pzl8af' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0h7y0d809r0s1p1349chh0pzl8af'>
+        <column datatype='integer' name='[Country Code]' role='dimension' type='ordinal' />
+        <column-instance column='[Country Code]' derivation='None' name='[none:Country Code:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Country Code:ok]'>
+        <groupfilter function='level-members' level='[none:Country Code:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter1' name='[Action1_03CBB9B9C328465389FE0A575817B0E3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Sheet 1,Sheet 3,Sheet 4' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Count of Restaurant by City</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cleaned Zomato Dataset' name='federated.0h7y0d809r0s1p1349chh0pzl8af' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h7y0d809r0s1p1349chh0pzl8af'>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='integer' name='[Country Code]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Price range]' role='measure' type='ordinal' />
+            <column caption='Cleaned Zomato Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country Code]' derivation='None' name='[none:Country Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Price range]' derivation='None' name='[none:Price range:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Price range:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:City:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Country Code:ok]</column>
+            <column>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' scope='cols' value='Count of Restaurants' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:City:nk]' value='62' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:City:nk]</rows>
+        <cols>[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]</cols>
+      </table>
+      <simple-id uuid='{2A323046-BF6F-4E01-89A6-266C2951ED2B}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Average Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cleaned Zomato Dataset' name='federated.0h7y0d809r0s1p1349chh0pzl8af' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h7y0d809r0s1p1349chh0pzl8af'>
+            <column caption='Average Rating' datatype='real' name='[Calculation_1343198602922442755]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Rating])' />
+            </column>
+            <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column datatype='integer' name='[Country Code]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Price range]' role='measure' type='ordinal' />
+            <column datatype='real' name='[Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Restaurant Name]' role='dimension' type='nominal' />
+            <column-instance column='[Price range]' derivation='Avg' name='[avg:Price range:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[City]' derivation='None' name='[none:City:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Country Code]' derivation='None' name='[none:Country Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Price range]' derivation='None' name='[none:Price range:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Restaurant Name]' derivation='None' name='[none:Restaurant Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1343198602922442755]' derivation='User' name='[usr:Calculation_1343198602922442755:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h7y0d809r0s1p1349chh0pzl8af].[Action (City)]'>
+            <groupfilter function='level-members' level='[City]' user:ui-action-filter='[Action1_03CBB9B9C328465389FE0A575817B0E3]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:City:nk]'>
+            <groupfilter function='level-members' level='[none:City:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Price range:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Restaurant Name:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0h7y0d809r0s1p1349chh0pzl8af].[usr:Calculation_1343198602922442755:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Country Code:ok]</column>
+            <column>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]</column>
+            <column>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:City:nk]</column>
+            <column>[federated.0h7y0d809r0s1p1349chh0pzl8af].[Action (City)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Restaurant Name:nk]' value='49' />
+            <format attr='width' value='206' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Restaurant Name:nk]' value='#000000' />
+            <format attr='band-color' scope='rows' value='#555555' />
+            <format attr='width' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Restaurant Name:nk]' value='396' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Restaurant Name:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#555555' />
+            <format attr='band-color' scope='cols' value='#555555' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0h7y0d809r0s1p1349chh0pzl8af].[avg:Price range:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Restaurant Name:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{0FBB6160-BA51-4F21-A273-F2454D91EF4F}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cleaned Zomato Dataset' name='federated.0h7y0d809r0s1p1349chh0pzl8af' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h7y0d809r0s1p1349chh0pzl8af'>
+            <column datatype='integer' name='[Country Code]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Price range]' role='measure' type='ordinal' />
+            <column caption='Cleaned Zomato Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country Code]' derivation='None' name='[none:Country Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Price range]' derivation='None' name='[none:Price range:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Price range:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Country Code:ok]</column>
+            <column>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' value='bold' />
+            <format attr='vertical-align' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' value='top' />
+            <format attr='vertical-align' data-class='subtotal' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' value='center' />
+            <format attr='text-align' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' value='center' />
+            <format attr='font-size' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' value='28' />
+            <format attr='color' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Bold' fontsize='15'>No.of Restaurants</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Bold'><![CDATA[<[federated.0h7y0d809r0s1p1349chh0pzl8af].[__tableau_internal_object_id__].[cnt:Cleaned Zomato Dataset.csv_B8D82DA86CA14E8FA625A40C50E317C8:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.1754143238067627' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{14C0C53C-DADD-4671-8B9C-41B2827AD9CE}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cleaned Zomato Dataset' name='federated.0h7y0d809r0s1p1349chh0pzl8af' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h7y0d809r0s1p1349chh0pzl8af'>
+            <column caption='No.of countries' datatype='integer' name='[Calculation_1343198602904535040]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Country Code])' />
+            </column>
+            <column datatype='integer' name='[Country Code]' role='dimension' type='ordinal' />
+            <column-instance column='[Country Code]' derivation='None' name='[none:Country Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1343198602904535040]' derivation='User' name='[usr:Calculation_1343198602904535040:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Country Code:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[usr:Calculation_1343198602904535040:qk]' value='center' />
+            <format attr='vertical-align' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[usr:Calculation_1343198602904535040:qk]' value='top' />
+            <format attr='font-weight' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[usr:Calculation_1343198602904535040:qk]' value='bold' />
+            <format attr='font-size' field='[federated.0h7y0d809r0s1p1349chh0pzl8af].[usr:Calculation_1343198602904535040:qk]' value='28' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='28' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0h7y0d809r0s1p1349chh0pzl8af].[usr:Calculation_1343198602904535040:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontname='Tableau Bold' fontsize='15'>No.of Countries</run>
+                <run>Æ&#10;</run>
+                <run fontname='Tableau Bold' fontsize='36'><![CDATA[<[federated.0h7y0d809r0s1p1349chh0pzl8af].[usr:Calculation_1343198602904535040:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{EB3EB8DA-A408-431E-B9A3-417604256A2D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='806' maxwidth='1578' minheight='806' minwidth='1578' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Cleaned Zomato Dataset' name='federated.0h7y0d809r0s1p1349chh0pzl8af' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0h7y0d809r0s1p1349chh0pzl8af'>
+        <column datatype='integer' name='[Country Code]' role='dimension' type='ordinal' />
+        <column datatype='integer' name='[Price range]' role='measure' type='ordinal' />
+        <column-instance column='[Country Code]' derivation='None' name='[none:Country Code:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[Price range]' derivation='None' name='[none:Price range:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='5' type-v2='layout-basic' w='100000' x='0' y='0' />
+        <zone forceUpdate='true' h='11042' id='3' type-v2='text' w='38973' x='28707' y='-620'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='15'>ZOMOTO RATING DASHBOARD</run>
+          </formatted-text>
+        </zone>
+        <zone h='22333' id='4' param='horz' type-v2='layout-flow' w='7605' x='90431' y='2481'>
+          <zone h='22333' id='10' name='Sheet 1' param='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]' type-v2='filter' w='7605' x='90431' y='2481'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='15012' id='6' param='horz' type-v2='layout-flow' w='7668' x='90938' y='28288'>
+          <zone h='15012' id='11' mode='checkdropdown' name='Sheet 1' param='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Country Code:ok]' show-apply='true' type-v2='filter' w='7668' x='90938' y='28288'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='67866' id='7' param='vert' type-v2='layout-flow' w='42142' x='2028' y='29404'>
+          <zone h='67866' id='9' name='Sheet 1' w='42142' x='2028' y='29404'>
+            <layout-cache fixed-size-h='8889' type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='67618' id='8' param='vert' type-v2='layout-flow' w='40621' x='48986' y='29777'>
+          <zone h='67618' id='12' name='Sheet 2' w='40621' x='48986' y='29777'>
+            <layout-cache fixed-size-h='363510' type-h='fixed' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='16377' id='13' param='horz' type-v2='layout-flow' w='41255' x='2978' y='11290'>
+          <zone fixed-size='489' h='16377' id='16' is-fixed='true' name='Sheet 3' show-title='false' w='41255' x='2978' y='11290'>
+            <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='18610' id='14' param='horz' type-v2='layout-flow' w='31242' x='51711' y='11538'>
+          <zone h='18610' id='17' name='Sheet 4' show-title='false' w='31242' x='51711' y='11538'>
+            <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='20099' id='15' is-scaled='1' param='C:/Users/Admin/Downloads/[CITYPNG.COM]Zomato Outline White Logo Icon - 3500x3500.png' type-v2='bitmap' w='15209' x='39163' y='13027' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98014' id='20' param='vert' type-v2='layout-flow' w='98986' x='507' y='993'>
+                <zone forceUpdate='true' h='11042' id='3' type-v2='text' w='38973' x='28707' y='-620'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='15'>ZOMOTO RATING DASHBOARD</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='124' h='16377' id='16' is-fixed='true' name='Sheet 3' show-title='false' w='41255' x='2978' y='11290'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='142' h='18610' id='17' is-fixed='true' name='Sheet 4' show-title='false' w='31242' x='51711' y='11538'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='162' h='20099' id='15' is-fixed='true' is-scaled='1' param='C:/Users/Admin/Downloads/[CITYPNG.COM]Zomato Outline White Logo Icon - 3500x3500.png' type-v2='bitmap' w='15209' x='39163' y='13027'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='22333' id='10' mode='checkdropdown' name='Sheet 1' param='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]' type-v2='filter' w='7605' x='90431' y='2481'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15012' id='11' mode='checkdropdown' name='Sheet 1' param='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Country Code:ok]' show-apply='true' type-v2='filter' w='7668' x='90938' y='28288'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='67866' id='9' is-fixed='true' name='Sheet 1' w='42142' x='2028' y='29404'>
+                  <layout-cache fixed-size-h='8889' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='67618' id='12' is-fixed='true' name='Sheet 2' w='40621' x='48986' y='29777'>
+                  <layout-cache fixed-size-h='363510' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CAB42CD7-5C4E-4039-87E2-7831EB3F9844}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:City:nk]</field>
+            <field>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Country Code:ok]</field>
+            <field>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]</field>
+            <field>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Restaurant ID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F46F5B7D-68F5-477E-82FF-C3D5A6C07AE5}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Price range:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0h7y0d809r0s1p1349chh0pzl8af].[avg:Rating:ok]</field>
+            <field>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:City:nk]</field>
+            <field>[federated.0h7y0d809r0s1p1349chh0pzl8af].[none:Restaurant Name:nk]</field>
+            <field>[federated.0h7y0d809r0s1p1349chh0pzl8af].[sum:Price range:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F6C4B6FF-B483-4113-90D4-8E05F8FE91BB}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{EEE7A230-6985-44D2-8A3F-AD14774F3010}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{38E3FAF5-47E3-4711-915A-445AD3315533}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{921250C4-399B-47C3-9A3C-E4427DE213E3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAGnUlEQVR4nO3dbWydZR3H8d99zlm37qF07WhXKm0jGR07BNo998jZA22XYSLB2K3TuCAG
+      fEqGRkyMr6bJFiuLEl4gzdJ0JYprIUGMQSvCpphsgbCADzOKbaW2NRRXBygKjenfF9tKB02Y
+      Ju2S8/t+kitpz31d59wv7m/O1XNO2yQiQoCpjCTl83mNjo5e7nMB5l1GkkZGRjQ8PHy5zwWY
+      d6nLfQLA5UQAsEYAmHOZxaW6r7NH3/76l5VJpKr6Ter8zv7/676ShVfoyA+f0kt/OK2G2qXT
+      t9fUN+pb9z2gnu4u3fKhGy79DiMiamtrQxKDMSejqLQqhs68HW/9cyJaGmqjPr8rJgZPnDue
+      pGPNDWtj3Y3ZSKfeu7Z85dWRa9ocK0qXhJJ07PjEF+PNv49E2y3bo6Q4c25OXUMMjI3HwXvu
+      ityW7bFjy7qQFKVXXhW5XFNUlpWEpLh+7cZYWbY0Fiy+InJN6yOjVBAAY87HhQB+0Hs0+h/q
+      mBFAOr7x4KPxwsnjcezkC/Hj7o5IzVh3ff7WGBwajL5HHouXB38Xjatq4t7uH8Xkv16Lh3sO
+      xzWVxSEp7vja/XH6+NGL1q5avyP+NDQUfX2PxvDQH6NpTXUc//2r8dnb1kdltjneenM4VqQX
+      B1sgzJujXd9V/Y69aqxZLkkqrrpWn9u1TZ/++K1qa79dufZ9Wn3lO5fkpz7/JfX33Kv23R/T
+      E795TbfvblVX1/f09huv6it3f0aD4/+WJK2orNDfxl7R1IzH+uRdX9Czjz2g9vZd6ntmWB9u
+      a5v1nAgA8+aNv57W4Ud+pXvuvlOJpCRJKZEUIUVMKZQolUqm56dSKV14n3ZqKpROzX65/vr5
+      U6rf2KQVSxZMr7tobUxJyfm1SXLxYrZAjLkeF7ZAW9eURfkHN8Trk1Px+uCJkDJx6KGfxPPP
+      /Cx++svn4une+yO1rCJ+fvLFuPOjm6OxeXeMjPw5jvR8P8ZGBmLjqpVxba4t/vHKS1FV8s79
+      pxeWRNfjv4gXTzwVDx7ujm9+9Y64rukj8ZfR4TjS3RNjoy/H1htr4+GnfxvPHn8i+h5/Mv5z
+      fgtEAIw5H0lmYeS3t8byJQtCUqxt2hrN+U3njifpWLvppshvXheZlEKZhZHf1hJ1V5WFpKi8
+      +ppobWmOleXLQlIsLq2M5m03RVH6XY+TJJFt3BTNN2+N5UsXhaQor6qN1taW+EBFaUiKZeVV
+      0XzztqioqIrWli2xIElFEhFRV1fHO8GwxM8AsEYAsEYAsEYAsEYAsEYAsEYAsEYAKGjpdFqV
+      lZUqLi6e9TgBoGDlcjn19/drYGBAe/bsmXVOZp7PCZhTSZJow4YN2r9/v3bu3KnU+Q/QZTKz
+      X+oEgIJy6NAh7du3T0VFRZc0ny0QCkpDQ4OKiop05swZHTt27H3nEwAKysTEhA4cOKBsNqvO
+      zs73nc8WCAVl7969mpycvOT5PAOgoPwvF79EADBHALBGALBGALDGq0AoKMmMP3vy7q8vfD/z
+      X2LwS/EoGKtXr1ZfX9/0xx9KSkpUU1MjSRobG9PZs2clSQcPHlRvb68kngFQQBYtWqRsNqt0
+      Ov2eY9XV1aqurpYklZWVTd9OACgY4+Pj6ujouGjrM5tTp05Nf80WCNZ4FQjWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADWCADW
+      CADWCADWCADWCADWCADWCADWCADW/gvr+kcOwV+gTQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
